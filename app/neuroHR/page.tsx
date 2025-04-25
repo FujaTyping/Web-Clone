@@ -114,7 +114,7 @@ export default function Home() {
           <button className="bg-gray-700 rounded-full p-3"><FaLongArrowAltLeft /></button>
           <div className="flex flex-col items-center justify-center gap-6">
             <FaQuoteLeft className="text-gray-400 w-8 h-8" />
-            <h1 className="font-bold text-3xl text-center max-w-2xl">"This platform has completely <span className="text-blue-400">transformed</span> our HR process. The automation saves us hours every week!"</h1>
+            <h1 className="font-bold text-3xl text-center max-w-2xl">{`"This platform has completely`} <span className="text-blue-400">transformed</span> our HR process. The automation saves us hours every {`week!"`}</h1>
             <div className="flex flex-col items-center justify-center gap-1">
               <img src={TMPFP.src} alt="PFP" />
               <h1 className="font-bold text-xl">John Doe</h1>

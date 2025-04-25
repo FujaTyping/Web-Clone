@@ -24,7 +24,7 @@ import ICON from "@/assets/clause/ICON.svg"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
-function page() {
+function Page() {
 
     gsap.registerPlugin(useGSAP);
 
@@ -34,6 +34,7 @@ function page() {
         gsap.to('.PTR', { x: -20, y: -50, delay: 0.2 });
         gsap.to('.PF', { x: -40, y: 50, delay: 0.3 });
     });
+
     return (
         <>
             <section className='bg-[#f6f6f4]'>
@@ -75,7 +76,7 @@ function page() {
                 <section className='flex flex-col items-center justify-center gap-8 py-14'>
                     <span className='flex items-center gap-2 p-2 border-2 rounded-full px-3 text-[#083324] text-sm'><FaQrcode /> FEATURES</span>
                     <h1 className='font-bold text-4xl max-w-2xl text-center text-[#083324] '>Latest advanced technologies to ensure everything you needs</h1>
-                    <p className='max-w-xl'>Maximie your team's productivity and security with our affordable, user-friendly contract management system.</p>
+                    <p className='max-w-xl'>Maximie your {`team's`} productivity and security with our affordable, user-friendly contract management system.</p>
                     <div className='mt-10'>
                         <div className='flex bg-[#ebeee8] rounded-xl border-4 border-[#ebeee8]'>
                             <div className='flex flex-col place-content-between p-10'>
@@ -107,8 +108,8 @@ function page() {
                 </section>
                 <main className='flex flex-col items-center justify-center bg-[#273e3d] rounded-xl py-14 gap-8'>
                     <span className='flex items-center gap-2 p-2 border-2 rounded-full px-3 text-white bg-[#374e4d] text-sm'><MdOutlineLan /> INTERRATIONS</span>
-                    <h1 className='text-white font-bold text-4xl'>Don't replace. Integrate</h1>
-                    <p className='text-white text-center'>We understand the hussle of replacing the long used tools in your process<br />That's why we intergrate tools you use in your day-to-day work.</p>
+                    <h1 className='text-white font-bold text-4xl'>{`Don't replace. Integrate`}</h1>
+                    <p className='text-white text-center'>We understand the hussle of replacing the long used tools in your process<br />{`That's`} why we intergrate tools you use in your day-to-day work.</p>
                     <a href="#" className='flex items-center text-white underline gap-2'>All Intergrations <FaLongArrowAltRight /></a>
                     <div className='flex flex-col gap-4 items-center justify-center w-full'>
                         <img src={MQ1.src} alt="MAQUEE" className='w-[1200px]' />
@@ -117,7 +118,7 @@ function page() {
                 </main>
                 <section className='text-[#06281b] flex flex-col items-center justify-center gap-8 py-10'>
                     <CgQuote className='w-12 h-12' />
-                    <h1 className='font-bold text-4xl max-w-4xl text-center text-[#083f2c]'>"Clause is helping opur company to decrease operational expenses and turnaround time, while increasing the compliance, resource allocation and effectiveness of our contract management. "</h1>
+                    <h1 className='font-bold text-4xl max-w-4xl text-center text-[#083f2c]'>{`"Clause is helping opur company to decrease operational expenses and turnaround time, while increasing the compliance, resource allocation and effectiveness of our contract management. "`}</h1>
                     <div className='flex flex-col items-center justify-center mt-4'>
                         <img src={TSM.src} alt="TEST" />
                         <p className='font-bold text-xl mt-4'>Darlene Robertson</p>
@@ -192,4 +193,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
