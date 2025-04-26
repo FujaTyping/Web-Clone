@@ -8,8 +8,8 @@ function Notfound() {
 
   const handleView = () => {
     if (!folderName.trim()) return;
-    const url = `https://fujatyping.github.io/Web-Clone/${folderName}`;
-    window.open(url, '_blank');
+    const url = `/Web-Clone/${folderName}`;
+    window.open(url, '_self');
   };
 
   return (
