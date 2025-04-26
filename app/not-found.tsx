@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { LuFolderSearch } from 'react-icons/lu';
 
-function notfound() {
+function Notfound() {
   const [folderName, setFolderName] = useState('');
 
   const handleView = () => {
@@ -54,4 +54,4 @@ function notfound() {
   )
 }
 
-export default notfound
+export default Notfound
